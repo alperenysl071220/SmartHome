@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "951013577738",
+    "project_id": "smart-home-4d884",
+    "storage_bucket": "smart-home-4d884.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951013577738:android:c9594aa897c48f6c9e7bf3",
+        "android_client_info": {
+          "package_name": "com.alperenburakyesil.smarthome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951013577738-egvt8g477470eu59ukt8jc411p69o3qd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCklUEe7vxItp5Rxuod9SS4dayDkGEZ3PM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951013577738-egvt8g477470eu59ukt8jc411p69o3qd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
