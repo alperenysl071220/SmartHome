@@ -6,4 +6,152 @@
     android:layout_height="match_parent"
     tools:context=".AddDevice">
 
+    <RelativeLayout
+        android:id="@+id/animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/animation">
+
+
+        <View
+            android:id="@+id/background_top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/background_2" />
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/smart_home_add"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:text="@string/smart_home"
+            android:layout_marginStart="130dp"
+            android:textAppearance="@style/smart_home_2"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more_option"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/more_option"/>
+
+        <View
+            android:id="@+id/background"
+            android:layout_width="303dp"
+            android:layout_height="523dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:background="@drawable/background" />
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="304dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="145dp"
+            android:background="@drawable/line_1"
+            />
+
+        <TextView
+            android:id="@+id/add_a_new_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/add_a_new_device_2"
+            android:textAppearance="@style/my_devices" />
+
+        <View
+            android:id="@+id/brand"
+            android:layout_width="274dp"
+            android:layout_height="151dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/rectangle_3"
+            />
+
+        <TextView
+            android:id="@+id/with_brands"
+            android:layout_width="103dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="205dp"
+            android:text="@string/with_brands"
+            android:textAppearance="@style/with_brands"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <Button
+            android:id="@+id/choose_a_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="252dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/choose"
+            android:text="@string/choose_a_brand"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/room"
+            android:layout_width="274dp"
+            android:layout_height="151dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="402dp"
+            android:background="@drawable/rectangle_3"
+            />
+
+        <TextView
+            android:id="@+id/with_rooms"
+            android:layout_width="103dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="405dp"
+            android:text="@string/with_rooms"
+            android:textAppearance="@style/with_brands"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <Button
+            android:id="@+id/choose_a_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="455dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/choose"
+            android:text="@string/choose_a_room"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>

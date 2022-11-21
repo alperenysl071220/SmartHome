@@ -3,4 +3,24 @@
     <string name="todo">TODO</string>
     <string name="smart_home">SMART HOME</string>
     <string name="deviceLogo" />
+    <string name="sign_in">Sign In</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="user_name">Username</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="register">Register</string>
+    <string name="agree_with_terms_amp_conditions"><![CDATA[Agree with Terms & Conditions]]></string>
+    <string name="my_devices">My Devices</string>
+    <string name="empty_now">Empty Now</string>
+    <string name="do_you_want">Do you want add new device?</string>
+    <string name="add_a_new_device">Add a new device</string>
+    <string name="add_a_new_device_2">Add A New Device</string>
+    <string name="with_brands">With Brands</string>
+    <string name="choose_a_brand">Choose a brand</string>
+    <string name="with_rooms">With Rooms</string>
+    <string name="choose_a_room">Choose a room</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.alperenburakyesil.smarthome;
+package com.alperenburakyesil.smarthome.Data;
 
 public class User_Data {
     private String username;

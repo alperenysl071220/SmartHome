@@ -6,4 +6,129 @@
     android:layout_height="match_parent"
     tools:context=".Devices">
 
+
+    <RelativeLayout
+        android:id="@+id/animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/animation"
+        >
+
+        <View
+            android:id="@+id/background_top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/background_2" />
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/smart_home"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:text="@string/smart_home"
+            android:layout_marginStart="130dp"
+            android:textAppearance="@style/smart_home_2"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more_option"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/more_option"/>
+
+        <View
+            android:id="@+id/background"
+            android:layout_width="303dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:background="@drawable/background"
+            />
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="304dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="145dp"
+            android:background="@drawable/line_1"
+            />
+
+        <TextView
+            android:id="@+id/my_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/my_devices"
+            android:textAppearance="@style/my_devices" />
+
+        <TextView
+            android:id="@+id/empty_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="260dp"
+            android:text="@string/empty_now"
+            android:textAppearance="@style/empty_now"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <View
+            android:id="@+id/background_add"
+            android:layout_width="303dp"
+            android:layout_height="143dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="483dp"
+            android:background="@drawable/background_add"
+            />
+
+        <TextView
+            android:id="@+id/do_you_want"
+            android:layout_width="284dp"
+            android:layout_height="46dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="493dp"
+            android:text="@string/do_you_want"
+            android:textAppearance="@style/do_you_want"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <Button
+            android:id="@+id/add_a_new_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="542dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#7F173B"
+            android:text="@string/add_a_new_device"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
