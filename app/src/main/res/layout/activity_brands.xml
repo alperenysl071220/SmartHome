@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Devices">
-
+    tools:context=".Brands">
 
     <RelativeLayout
         android:id="@+id/animation"
@@ -46,16 +45,16 @@
 
         <View
             android:id="@+id/background"
-            android:layout_width="303dp"
-            android:layout_height="350dp"
+            android:layout_width="360dp"
+            android:layout_height="520dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="95dp"
-            android:background="@drawable/background"
+            android:background="@drawable/background_add_device"
             />
 
         <View
             android:id="@+id/line_1"
-            android:layout_width="304dp"
+            android:layout_width="358dp"
             android:layout_height="1dp"
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
@@ -69,58 +68,47 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="75dp"
+            android:layout_marginStart="45dp"
             android:layout_marginTop="110dp"
             android:gravity="center_horizontal|center_vertical"
-            android:text="@string/my_devices"
+            android:text="@string/choose_a_brand"
             android:textAppearance="@style/my_devices" />
 
-        <TextView
-            android:id="@+id/empty_now"
+        <ImageButton
+            android:id="@+id/bosch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="260dp"
-            android:text="@string/empty_now"
-            android:textAppearance="@style/empty_now"
-            android:gravity="center_horizontal|center_vertical"
-            />
-
-        <View
-            android:id="@+id/background_add"
-            android:layout_width="303dp"
-            android:layout_height="143dp"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="483dp"
-            android:background="@drawable/background_add"
-            />
+            android:layout_centerInParent="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="162dp"
+            android:background="@drawable/bosch"
+            tools:src="@drawable/bosch" />
 
-        <TextView
-            android:id="@+id/do_you_want"
-            android:layout_width="284dp"
-            android:layout_height="46dp"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="493dp"
-            android:text="@string/do_you_want"
-            android:textAppearance="@style/do_you_want"
-            android:gravity="center_horizontal|center_vertical"
-            />
-
-        <Button
-            android:id="@+id/addDevice"
+        <ImageButton
+            android:id="@+id/siemens"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="542dp"
-            android:layout_centerHorizontal="true"
-            android:backgroundTint="#7F173B"
-            android:text="@string/add_a_new_device"
-            android:onClick="addDevice"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+            android:layout_centerInParent="true"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="162dp"
+            android:background="@drawable/siemens"
+            tools:src="@drawable/siemens" />
+
+        <ImageButton
+            android:id="@+id/samsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="279dp"
+            android:layout_marginTop="161dp"
+            android:background="@drawable/samsung"
+            tools:src="@drawable/samsung" />
 
 
     </RelativeLayout>
