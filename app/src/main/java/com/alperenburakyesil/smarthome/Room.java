@@ -1,9 +1,3 @@
-
-
-
-
-
-
 package com.alperenburakyesil.smarthome;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,42 +6,39 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.PopupMenu;
 
-public class Brands extends AppCompatActivity {
+public class Room extends AppCompatActivity {
 
-    ImageButton user;
-
+    ImageView user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_brands);
+        setContentView(R.layout.activity_room);
 
         show_more();
-
-
     }
 
-    public void bosch(View view) {
-        startActivity(new Intent(Brands.this, Room.class));
+    public void bedroom(View view) {
+        startActivity(new Intent(Room.this, InfoDev.class));
     }
 
-    public void siemens(View view) {
-        startActivity(new Intent(Brands.this, Room.class));
+    public void bathroom(View view) {
+        startActivity(new Intent(Room.this, InfoDev.class));
     }
 
-    public void samsung(View view) {
-        startActivity(new Intent(Brands.this, Room.class));
+    public void dining_room(View view) {
+        startActivity(new Intent(Room.this, InfoDev.class));
     }
 
-    public void lg(View view) {
-        startActivity(new Intent(Brands.this, Room.class));
+    public void living_room(View view) {
+        startActivity(new Intent(Room.this, InfoDev.class));
     }
 
-    public void grunding(View view) {
-        startActivity(new Intent(Brands.this, Room.class));
+    public void kitchen(View view) {
+        startActivity(new Intent(Room.this, InfoDev.class));
     }
 
     public void show_more(){
@@ -58,7 +49,7 @@ public class Brands extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                PopupMenu popupMenu = new PopupMenu(Brands.this, v);
+                PopupMenu popupMenu = new PopupMenu(Room.this, v);
                 popupMenu.getMenuInflater().inflate(R.menu.user_info, popupMenu.getMenu());
 
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -66,10 +57,10 @@ public class Brands extends AppCompatActivity {
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()){
                             case R.id.settings:
-                                startActivity(new Intent(Brands.this, Settings.class));
+                                startActivity(new Intent(Room.this, Settings.class));
                                 return true;
                             case R.id.exit:
-                                startActivity(new Intent(Brands.this, SignInUp.class));
+                                startActivity(new Intent(Room.this, SignInUp.class));
                                 finish();
                                 return true;
                         }
@@ -81,4 +72,5 @@ public class Brands extends AppCompatActivity {
         });
 
     }
+
 }

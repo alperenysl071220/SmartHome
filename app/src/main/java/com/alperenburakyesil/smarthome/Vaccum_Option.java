@@ -1,63 +1,57 @@
 package com.alperenburakyesil.smarthome;
 
-import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.PopupMenu;
-import android.widget.RelativeLayout;
 
-public class Devices extends AppCompatActivity {
+import com.google.android.material.imageview.ShapeableImageView;
 
+public class Vaccum_Option extends AppCompatActivity {
 
-    ImageButton user;
-    RelativeLayout light, vacuum;
+    ShapeableImageView shapeableImageView;
+
+    ImageView user;
+
+    int status = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_devices);
+        setContentView(R.layout.activity_vaccum_option);
+        shapeableImageView = findViewById(R.id.clean_all);
 
-        light = findViewById(R.id.samsung_light_1);
-        vacuum = findViewById(R.id.bosch_vacuum_1);
+        clean_all();
 
         show_more();
-
-        device_control();
     }
 
-    private void device_control() {
+    private void clean_all() {
 
-        light.setOnClickListener(new View.OnClickListener() {
+        shapeableImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Devices.this, Light_Option.class));
+
+                if (status == 0){
+                    shapeableImageView.setStrokeColor(ColorStateList.valueOf(Color.BLUE));
+                    shapeableImageView.setStrokeWidth(20);
+                    status++;
+                }
+
+                else if(status == 1){
+                    shapeableImageView.setStrokeColor(null);
+                    shapeableImageView.setStrokeWidth(0);
+                    status--;
+                }
+
             }
         });
-
-        vacuum.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Devices.this, Vaccum_Option.class));
-            }
-        });
-
-    }
-
-    @Override
-    public void onBackPressed() {
-        moveTaskToBack(false);
-    }
-
-
-    public void addDevice(View view) {
-        startActivity(new Intent(Devices.this, Add.class));
     }
 
     public void show_more(){
@@ -68,7 +62,7 @@ public class Devices extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                PopupMenu popupMenu = new PopupMenu(Devices.this, v);
+                PopupMenu popupMenu = new PopupMenu(Vaccum_Option.this, v);
                 popupMenu.getMenuInflater().inflate(R.menu.user_info, popupMenu.getMenu());
 
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -76,10 +70,10 @@ public class Devices extends AppCompatActivity {
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()){
                             case R.id.settings:
-                                startActivity(new Intent(Devices.this, Settings.class));
+                                startActivity(new Intent(Vaccum_Option.this, Settings.class));
                                 return true;
                             case R.id.exit:
-                                startActivity(new Intent(Devices.this, SignInUp.class));
+                                startActivity(new Intent(Vaccum_Option.this, SignInUp.class));
                                 finish();
                                 return true;
                         }
@@ -91,6 +85,5 @@ public class Devices extends AppCompatActivity {
         });
 
     }
-
 
 }

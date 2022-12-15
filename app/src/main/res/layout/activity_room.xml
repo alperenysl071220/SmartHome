@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".Brands">
+    tools:context=".Room">
 
     <RelativeLayout
         android:id="@+id/animation"
@@ -73,11 +71,11 @@
             android:layout_marginStart="45dp"
             android:layout_marginTop="110dp"
             android:gravity="center_horizontal|center_vertical"
-            android:text="@string/choose_a_brand"
+            android:text="@string/choose_a_room"
             android:textAppearance="@style/my_devices" />
 
         <ImageButton
-            android:id="@+id/bosch"
+            android:id="@+id/kitchen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -85,12 +83,12 @@
             android:layout_centerInParent="true"
             android:layout_marginStart="35dp"
             android:layout_marginTop="160dp"
-            android:background="@drawable/bosch_logo"
-            android:onClick="bosch"
-            tools:src="@drawable/bosch_logo" />
+            android:background="@drawable/kitchen"
+            android:onClick="kitchen"
+            tools:src="@drawable/kitchen" />
 
         <ImageButton
-            android:id="@+id/siemens"
+            android:id="@+id/living_room"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -98,12 +96,12 @@
             android:layout_centerInParent="true"
             android:layout_marginStart="155dp"
             android:layout_marginTop="160dp"
-            android:background="@drawable/siemens"
-            android:onClick="siemens"
-            tools:src="@drawable/siemens" />
+            android:background="@drawable/living_room"
+            android:onClick="living_room"
+            tools:src="@drawable/living_room" />
 
         <ImageButton
-            android:id="@+id/samsung"
+            android:id="@+id/dining_room"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -111,12 +109,12 @@
             android:layout_centerInParent="true"
             android:layout_marginStart="275dp"
             android:layout_marginTop="160dp"
-            android:background="@drawable/samsung"
-            android:onClick="samsung"
-            tools:src="@drawable/samsung"/>
+            android:background="@drawable/dining_room"
+            android:onClick="dining_room"
+            tools:src="@drawable/dining_room"/>
 
         <ImageButton
-            android:id="@+id/lg"
+            android:id="@+id/bathroom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -124,12 +122,12 @@
             android:layout_centerInParent="true"
             android:layout_marginStart="35dp"
             android:layout_marginTop="275dp"
-            android:background="@drawable/lg"
-            android:onClick="lg"
-            tools:src="@drawable/lg" />
+            android:background="@drawable/bathroom"
+            android:onClick="bathroom"
+            tools:src="@drawable/bathroom" />
 
         <ImageButton
-            android:id="@+id/grunding"
+            android:id="@+id/bedroom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -137,11 +135,11 @@
             android:layout_centerInParent="true"
             android:layout_marginStart="155dp"
             android:layout_marginTop="275dp"
-            android:background="@drawable/grunding"
-            android:onClick="grunding"
-            tools:src="@drawable/grunding" />
+            android:background="@drawable/bedroom"
+            android:onClick="bedroom"
+            tools:src="@drawable/bedroom" />
 
 
     </RelativeLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

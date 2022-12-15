@@ -1,9 +1,3 @@
-
-
-
-
-
-
 package com.alperenburakyesil.smarthome;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,42 +9,19 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
 
-public class Brands extends AppCompatActivity {
+public class InfoDev extends AppCompatActivity {
 
     ImageButton user;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_brands);
+        setContentView(R.layout.activity_info_dev);
 
         show_more();
-
-
     }
 
-    public void bosch(View view) {
-        startActivity(new Intent(Brands.this, Room.class));
-    }
-
-    public void siemens(View view) {
-        startActivity(new Intent(Brands.this, Room.class));
-    }
-
-    public void samsung(View view) {
-        startActivity(new Intent(Brands.this, Room.class));
-    }
-
-    public void lg(View view) {
-        startActivity(new Intent(Brands.this, Room.class));
-    }
-
-    public void grunding(View view) {
-        startActivity(new Intent(Brands.this, Room.class));
-    }
-
-    public void show_more(){
+     public void show_more(){
 
         user = findViewById(R.id.user);
 
@@ -58,7 +29,7 @@ public class Brands extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                PopupMenu popupMenu = new PopupMenu(Brands.this, v);
+                PopupMenu popupMenu = new PopupMenu(InfoDev.this, v);
                 popupMenu.getMenuInflater().inflate(R.menu.user_info, popupMenu.getMenu());
 
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -66,10 +37,10 @@ public class Brands extends AppCompatActivity {
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()){
                             case R.id.settings:
-                                startActivity(new Intent(Brands.this, Settings.class));
+                                startActivity(new Intent(InfoDev.this, Settings.class));
                                 return true;
                             case R.id.exit:
-                                startActivity(new Intent(Brands.this, SignInUp.class));
+                                startActivity(new Intent(InfoDev.this, SignInUp.class));
                                 finish();
                                 return true;
                         }
@@ -80,5 +51,9 @@ public class Brands extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void confirm(View view) {
+        startActivity(new Intent(InfoDev.this, Devices.class));
     }
 }

@@ -30,6 +30,8 @@ public class Login extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference reference;
 
+    static String sent_username;
+
     private User_Data user;
 
     String Password_data, Username_data;
@@ -83,7 +85,9 @@ public class Login extends AppCompatActivity {
                             new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    startActivity(new Intent(Login.this, Devices.class));
+                                    Intent intent = new Intent(Login.this, Devices.class);
+                                    sent_username = String.valueOf(username.getText());
+                                    startActivity(intent);
                                     finish();
                                 }
                             });

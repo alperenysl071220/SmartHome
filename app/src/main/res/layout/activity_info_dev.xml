@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".Brands">
+    android:orientation="vertical"
+    tools:context=".InfoDev">
 
     <RelativeLayout
         android:id="@+id/animation"
@@ -47,20 +47,20 @@
 
         <View
             android:id="@+id/background"
-            android:layout_width="360dp"
-            android:layout_height="520dp"
+            android:layout_width="340dp"
+            android:layout_height="400dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="95dp"
+            android:layout_centerVertical="true"
             android:background="@drawable/background_add_device"
             />
 
         <View
             android:id="@+id/line_1"
-            android:layout_width="358dp"
+            android:layout_width="341dp"
             android:layout_height="1dp"
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="145dp"
+            android:layout_marginTop="180dp"
             android:background="@drawable/line_1"
             />
 
@@ -70,78 +70,58 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="110dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="145dp"
             android:gravity="center_horizontal|center_vertical"
-            android:text="@string/choose_a_brand"
+            android:text="@string/device_details"
             android:textAppearance="@style/my_devices" />
 
-        <ImageButton
-            android:id="@+id/bosch"
+        <EditText
+            android:id="@+id/serial_no"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="160dp"
-            android:background="@drawable/bosch_logo"
-            android:onClick="bosch"
-            tools:src="@drawable/bosch_logo" />
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="200dp"
+            android:ems="15"
+            android:gravity="fill_horizontal"
+            android:hint="@string/device_serial_number"
+            android:inputType="text"
+            android:textAppearance="@style/my_devices"
+            android:textSize="18sp" />
 
-        <ImageButton
-            android:id="@+id/siemens"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="155dp"
-            android:layout_marginTop="160dp"
-            android:background="@drawable/siemens"
-            android:onClick="siemens"
-            tools:src="@drawable/siemens" />
+        <EditText
 
-        <ImageButton
-            android:id="@+id/samsung"
+            android:id="@+id/purchase_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="275dp"
-            android:layout_marginTop="160dp"
-            android:background="@drawable/samsung"
-            android:onClick="samsung"
-            tools:src="@drawable/samsung"/>
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="250dp"
+            android:ems="15"
+            android:gravity="fill_horizontal"
+            android:hint="@string/purchase_date"
+            android:inputType="text"
+            android:textAppearance="@style/my_devices"
+            android:textSize="18sp" />
 
-        <ImageButton
-            android:id="@+id/lg"
+        <Button
+            android:id="@+id/addDevice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="275dp"
-            android:background="@drawable/lg"
-            android:onClick="lg"
-            tools:src="@drawable/lg" />
-
-        <ImageButton
-            android:id="@+id/grunding"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="155dp"
-            android:layout_marginTop="275dp"
-            android:background="@drawable/grunding"
-            android:onClick="grunding"
-            tools:src="@drawable/grunding" />
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="470dp"
+            android:backgroundTint="#7F173B"
+            android:onClick="confirm"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
 
     </RelativeLayout>
-
 </LinearLayout>
