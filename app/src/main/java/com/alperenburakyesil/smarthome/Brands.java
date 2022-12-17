@@ -1,9 +1,3 @@
-
-
-
-
-
-
 package com.alperenburakyesil.smarthome;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +13,8 @@ public class Brands extends AppCompatActivity {
 
     ImageButton user;
 
+    static String brand;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,22 +27,27 @@ public class Brands extends AppCompatActivity {
     }
 
     public void bosch(View view) {
-        startActivity(new Intent(Brands.this, Room.class));
+         brand = "Bosch";
+         startActivity(new Intent(Brands.this, Room.class));
     }
 
     public void siemens(View view) {
+        brand = "Siemens";
         startActivity(new Intent(Brands.this, Room.class));
     }
 
     public void samsung(View view) {
+        brand = "Samsung";
         startActivity(new Intent(Brands.this, Room.class));
     }
 
     public void lg(View view) {
+        brand = "Lg";
         startActivity(new Intent(Brands.this, Room.class));
     }
 
     public void grunding(View view) {
+        brand = "Grunding";
         startActivity(new Intent(Brands.this, Room.class));
     }
 

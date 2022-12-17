@@ -202,6 +202,7 @@
             android:layout_marginTop="566dp"
             android:backgroundTint="#7F173B"
             android:text="@string/register"
+            android:onClick="register"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
 

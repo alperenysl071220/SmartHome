@@ -12,6 +12,7 @@ import android.widget.PopupMenu;
 public class Room extends AppCompatActivity {
 
     ImageView user;
+    static String room;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,25 +22,34 @@ public class Room extends AppCompatActivity {
         show_more();
     }
 
-    public void bedroom(View view) {
+
+    public void kitchen(View view) {
+        room = "Kitchen";
         startActivity(new Intent(Room.this, InfoDev.class));
     }
 
-    public void bathroom(View view) {
+
+    public void living_room(View view) {
+        room = "Living_Room";
         startActivity(new Intent(Room.this, InfoDev.class));
     }
 
     public void dining_room(View view) {
+        room = "Dining_Room";
         startActivity(new Intent(Room.this, InfoDev.class));
     }
 
-    public void living_room(View view) {
+    public void bathroom(View view) {
+        room = "Bathroom";
         startActivity(new Intent(Room.this, InfoDev.class));
     }
 
-    public void kitchen(View view) {
+    public void bedroom(View view) {
+        room = "Bedroom";
         startActivity(new Intent(Room.this, InfoDev.class));
     }
+
+
 
     public void show_more(){
 

@@ -23,8 +23,6 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Register extends AppCompatActivity {
 
-    Button register;
-
     EditText username;
     EditText firstname;
     EditText lastname;
@@ -57,51 +55,10 @@ public class Register extends AppCompatActivity {
 
         //User_Data
         user_data = new User_Data();
-        register();
+
     }
 
-    private void register(){
 
-
-
-        register = findViewById(R.id.register);
-
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                String user_name = String.valueOf(username.getText());
-                String first_name = String.valueOf(firstname.getText());
-                String last_name = String.valueOf(lastname.getText());
-                String e_mail = String.valueOf(email.getText());
-                String phone_number = String.valueOf(phoneNumber.getText());
-                String passwords = String.valueOf(password.getText());
-
-                if (TextUtils.isEmpty(user_name) || TextUtils.isEmpty(first_name)|| TextUtils.isEmpty(last_name) || TextUtils.isEmpty(e_mail)
-                || TextUtils.isEmpty(phone_number) || TextUtils.isEmpty(passwords)){
-
-                    AlertDialog alertDialog = new AlertDialog.Builder(Register.this).create();
-                    alertDialog.setTitle("Registration Status");
-                    alertDialog.setMessage("Unsuccessful\n      Please fill all boxes");
-                    alertDialog.setCancelable(false);
-                    alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    dialog.dismiss();
-                                }
-                            });
-                    alertDialog.show();
-                }
-                else {
-                    add_Data(user_name, first_name, last_name, e_mail, phone_number, passwords);
-                }
-
-
-
-            }
-        });
-    }
 
     private void add_Data(String username, String firstname, String lastname, String email, String phonenumber, String password){
         user_data.setUsername(username);
@@ -141,6 +98,32 @@ public class Register extends AppCompatActivity {
         });
 
     }
+    public void register(View view) {
+        String user_name = String.valueOf(username.getText());
+        String first_name = String.valueOf(firstname.getText());
+        String last_name = String.valueOf(lastname.getText());
+        String e_mail = String.valueOf(email.getText());
+        String phone_number = String.valueOf(phoneNumber.getText());
+        String passwords = String.valueOf(password.getText());
 
+        if (TextUtils.isEmpty(user_name) || TextUtils.isEmpty(first_name)|| TextUtils.isEmpty(last_name) || TextUtils.isEmpty(e_mail)
+                || TextUtils.isEmpty(phone_number) || TextUtils.isEmpty(passwords)){
 
+            AlertDialog alertDialog = new AlertDialog.Builder(Register.this).create();
+            alertDialog.setTitle("Registration Status");
+            alertDialog.setMessage("Unsuccessful\n      Please fill all boxes");
+            alertDialog.setCancelable(false);
+            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                    new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            alertDialog.dismiss();
+                        }
+                    });
+            alertDialog.show();
+        }
+        else {
+            add_Data(user_name, first_name, last_name, e_mail, phone_number, passwords);
+        }
+    }
 }

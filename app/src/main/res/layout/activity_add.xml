@@ -84,7 +84,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="162dp"
             android:background="@drawable/vave"
-            android:onClick="device"
+            android:onClick="vave"
             tools:src="@drawable/vave" />
 
         <ImageButton
@@ -97,7 +97,7 @@
             android:layout_marginStart="155dp"
             android:layout_marginTop="162dp"
             android:background="@drawable/fridge"
-            android:onClick="device"
+            android:onClick="fridge"
             tools:src="@drawable/fridge" />
 
         <ImageButton
@@ -110,7 +110,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="306dp"
             android:background="@drawable/vaccum"
-            android:onClick="device"
+            android:onClick="vacuum"
             tools:src="@drawable/vaccum" />
 
         <ImageButton
@@ -123,7 +123,7 @@
             android:layout_marginStart="155dp"
             android:layout_marginTop="306dp"
             android:background="@drawable/lamp"
-            android:onClick="device"
+            android:onClick="lamp"
             tools:src="@drawable/lamp" />
 
         <ImageButton
@@ -136,7 +136,7 @@
             android:layout_marginStart="279dp"
             android:layout_marginTop="162dp"
             android:background="@drawable/air_cond"
-            android:onClick="device"
+            android:onClick="air_cond"
             tools:src="@drawable/air_cond" />
 
 

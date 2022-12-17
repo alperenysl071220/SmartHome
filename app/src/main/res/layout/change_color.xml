@@ -6,35 +6,35 @@
     android:layout_margin="15dp"
     app:cardElevation="4dp">
 
-    <Button
+    <com.google.android.material.imageview.ShapeableImageView
         style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:background="@color/purple_200"
         />
 
-    <Button
+    <com.google.android.material.imageview.ShapeableImageView
         style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="120dp"
         android:background="@color/teal_200" />
 
-    <Button
+    <com.google.android.material.imageview.ShapeableImageView
         style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="240dp"
         android:background="#F63A3A" />
 
-    <Button
+    <com.google.android.material.imageview.ShapeableImageView
         style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="80dp"
         android:background="#FFF06F" />
 
-    <Button
+    <com.google.android.material.imageview.ShapeableImageView
         style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="100dp"
         android:layout_height="50dp"
@@ -42,7 +42,7 @@
         android:layout_marginTop="80dp"
         android:background="#03A9F4" />
 
-    <Button
+    <com.google.android.material.imageview.ShapeableImageView
         style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="100dp"
         android:layout_height="50dp"
@@ -50,14 +50,14 @@
         android:layout_marginTop="80dp"
         android:background="#F8F8F8" />
 
-    <Button
+    <com.google.android.material.imageview.ShapeableImageView
         style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="160dp"
         android:background="#ABFFAE" />
 
-    <Button
+    <com.google.android.material.imageview.ShapeableImageView
         style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="100dp"
         android:layout_height="50dp"
@@ -65,7 +65,7 @@
         android:layout_marginTop="160dp"
         android:background="#FF948C" />
 
-    <Button
+    <com.google.android.material.imageview.ShapeableImageView
         style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="100dp"
         android:layout_height="50dp"
